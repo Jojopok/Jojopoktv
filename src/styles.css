@@ -1,14 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
+:root {
+  --primary-orange: #ff6a00;
+  --secondary-orange: #ffb347;
+  --light-orange: #ff8a00;
+  --lighter-orange: #ffcc80;
+  --white: #ffffff;
+  --black: #000000;
+  --text-dark: #1a1a1a;
+  --text-gray: #555;
+  --twitch-purple: #9146FF;
+  --youtube-red: #ff0000;
+  --tiktok-black: #000000;
+  --instagram-start: #feda75;
+  --instagram-mid: #d62976;
+  --instagram-end: #962fbf;
+  --bg-semi-transparent: rgba(255, 255, 255, 0.5);
+  --bg-light-transparent: rgba(255, 255, 255, 0.1);
+  --shadow: rgba(0, 0, 0, 0.25);
+  --shadow-light: rgba(0, 0, 0, 0.15);
+  --cursor-border: rgba(255, 255, 255, 0.75);
+}
+
+.dark {
+  --primary-orange: #003366;
+  --secondary-orange: #0066cc;
+  --light-orange: #001122;
+  --lighter-orange: #002244;
+  --white: #ffffff;
+  --black: #000000;
+  --text-dark: #e0e0e0;
+  --text-gray: #cccccc;
+  --twitch-purple: #9146FF;
+  --youtube-red: #ff0000;
+  --tiktok-black: #ffffff;
+  --instagram-start: #feda75;
+  --instagram-mid: #d62976;
+  --instagram-end: #962fbf;
+  --bg-semi-transparent: rgba(0, 0, 0, 0.5);
+  --bg-light-transparent: rgba(0, 0, 0, 0.1);
+  --shadow: rgba(0, 0, 0, 0.5);
+  --shadow-light: rgba(0, 0, 0, 0.3);
+  --cursor-border: rgba(255, 255, 255, 0.75);
+}
+
 html, body {
   height: 100%;
   margin: 0;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(to bottom, #ff8a00, #ffcc80);
+  background: linear-gradient(to bottom, var(--light-orange), var(--lighter-orange));
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

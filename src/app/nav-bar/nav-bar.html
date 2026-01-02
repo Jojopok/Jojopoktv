@@ -15,6 +15,9 @@
       <a mat-button href="#accueil">Accueil</a>
       <a mat-button href="#reseaux">Réseaux</a>
       <a mat-button href="#contact">Contact</a>
+      <button mat-icon-button (click)="toggleDarkMode()">
+        <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+      </button>
     </div>
   </mat-toolbar>
 
@@ -22,5 +25,8 @@
     <a mat-button href="#accueil" (click)="menuOpen = false">Accueil</a>
     <a mat-button href="#reseaux" (click)="menuOpen = false">Réseaux</a>
     <a mat-button href="#contact" (click)="menuOpen = false">Contact</a>
+    <button mat-icon-button (click)="toggleDarkMode(); menuOpen = false">
+      <mat-icon>{{ isDarkMode ? 'light_mode' : 'dark_mode' }}</mat-icon>
+    </button>
   </div>
 </div>
