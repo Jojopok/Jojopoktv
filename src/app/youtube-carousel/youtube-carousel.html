@@ -1,0 +1,31 @@
+<div class="yt-box">
+<div class="yt-section-title">
+  <h2>Quelques‑unes de mes Vidéos</h2>
+  <p>Retrouve mes derniers contenus sur TikTok et Instagram</p>
+</div>
+
+<div class="yt-carousel-wrapper">
+  <button mat-icon-button class="nav-btn" (click)="prev()">
+    <mat-icon>chevron_left</mat-icon>
+  </button>
+
+  <div class="yt-carousel">
+    <mat-card *ngFor="let v of visibleVideos" class="yt-card">
+      <div class="video-wrapper">
+        <iframe
+          class="yt-frame"
+          [src]="v.embedUrl"
+          allowfullscreen>
+        </iframe>
+      </div>
+      <mat-card-content>
+        <p class="caption">{{ v.title }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <button mat-icon-button class="nav-btn" (click)="next()">
+    <mat-icon>chevron_right</mat-icon>
+  </button>
+</div>
+</div>

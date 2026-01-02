@@ -1,0 +1,26 @@
+<div class="navbar-wrapper">
+  <mat-toolbar class="toolbar">
+    <span class="logo">Jojopok</span>
+    <span class="spacer"></span>
+
+    <button
+      mat-icon-button
+      class="burger"
+      (click)="menuOpen = !menuOpen"
+    >
+      <mat-icon>{{ menuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+
+    <div class="links-desktop">
+      <a mat-button href="#accueil">Accueil</a>
+      <a mat-button href="#reseaux">Réseaux</a>
+      <a mat-button href="#contact">Contact</a>
+    </div>
+  </mat-toolbar>
+
+  <div class="dropdown" [class.open]="menuOpen">
+    <a mat-button href="#accueil" (click)="menuOpen = false">Accueil</a>
+    <a mat-button href="#reseaux" (click)="menuOpen = false">Réseaux</a>
+    <a mat-button href="#contact" (click)="menuOpen = false">Contact</a>
+  </div>
+</div>

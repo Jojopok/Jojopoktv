@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.logo-img {
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:50px;
+    width:90px;
+    height:90px;
+}
+
+.presentation-box {
+font-family: 'Montserrat', sans-serif;
+color: #1a1a1a;
+  margin: 40px auto;
+  padding: 24px;
+background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.presentation-box h2 {
+  font-weight: 700;
+}
+
+.presentation-box p {
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.intro, .cta {
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.social-buttons a {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.social-buttons a:hover {
+  transform: scale(1.05);
+}
+
+.tw {
+  background: #9146FF;
+}
+
+.tw:hover {
+  transform: scale(1.05);
+}
+
+.yt {
+  background: #ff0000;
+}
+
+.tt {
+  background: #000000;
+}
+
+.ig {
+  background: linear-gradient(to right, #feda75, #d62976, #962fbf);
+}
+
+/* Cursor */
+.cursor{
+  padding-top: 4px;
+  padding-bottom: 6px;
+    position: relative;
+    width: fit-content;
+
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both,
+    blinkingCursor 500ms steps(50) 1s 10 normal forwards;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
+}
+
+
+@media (max-width: 600px) {
+  .presentation-box {
+    padding: 16px;
+  }
+
+  .logo-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .intro, .cta {
+    font-size: 15px;
+  }
+
+  .social-buttons a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
