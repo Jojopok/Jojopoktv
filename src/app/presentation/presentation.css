@@ -81,7 +81,6 @@ background: rgba(255, 255, 255, 0.5);
   background: linear-gradient(to right, #feda75, #d62976, #962fbf);
 }
 
-/* Cursor */
 .cursor{
   padding-top: 4px;
   padding-bottom: 6px;
@@ -95,7 +94,7 @@ background: rgba(255, 255, 255, 0.5);
     white-space: nowrap;
     overflow: hidden;
 }
-/* Animation */
+
 .typewriter-animation {
   animation: 
     typewriter 5s steps(50) 1s 1 normal both,
