@@ -2,10 +2,10 @@
   margin: 40px auto;
   padding: 20px;
   max-width: 1200px;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--bg-light-transparent);
   border-radius: 16px;
   backdrop-filter: blur(6px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 25px var(--shadow);
 }
 
 

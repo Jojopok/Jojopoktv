@@ -11,12 +11,12 @@
 
 .presentation-box {
 font-family: 'Montserrat', sans-serif;
-color: #1a1a1a;
+color: var(--text-dark);
   margin: 40px auto;
   padding: 24px;
-background: rgba(255, 255, 255, 0.5);
+background: var(--bg-semi-transparent);
   backdrop-filter: blur(6px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 25px var(--shadow);
   text-align: center;
 }
 
@@ -53,7 +53,7 @@ background: rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: var(--white);
   transition: transform 0.2s ease;
 }
 
@@ -62,7 +62,7 @@ background: rgba(255, 255, 255, 0.5);
 }
 
 .tw {
-  background: #9146FF;
+  background: var(--twitch-purple);
 }
 
 .tw:hover {
@@ -70,15 +70,15 @@ background: rgba(255, 255, 255, 0.5);
 }
 
 .yt {
-  background: #ff0000;
+  background: var(--youtube-red);
 }
 
 .tt {
-  background: #000000;
+  background: var(--tiktok-black);
 }
 
 .ig {
-  background: linear-gradient(to right, #feda75, #d62976, #962fbf);
+  background: linear-gradient(to right, var(--instagram-start), var(--instagram-mid), var(--instagram-end));
 }
 
 .cursor{
@@ -88,7 +88,7 @@ background: rgba(255, 255, 255, 0.5);
     width: fit-content;
 
     margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
+    border-right: 2px solid var(--cursor-border);
     font-size: 30px;
     text-align: center;
     white-space: nowrap;
@@ -105,7 +105,7 @@ background: rgba(255, 255, 255, 0.5);
   to { width: 100%; }
 }
 @keyframes blinkingCursor{
-  from { border-right-color: rgba(255,255,255,.75); }
+  from { border-right-color: var(--cursor-border); }
   to { border-right-color: transparent; }
 }
 
