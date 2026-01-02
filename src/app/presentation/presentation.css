@@ -81,7 +81,6 @@ background: var(--bg-semi-transparent);
   background: linear-gradient(to right, var(--instagram-start), var(--instagram-mid), var(--instagram-end));
 }
 
-/* Cursor */
 .cursor{
   padding-top: 4px;
   padding-bottom: 6px;
@@ -95,7 +94,7 @@ background: var(--bg-semi-transparent);
     white-space: nowrap;
     overflow: hidden;
 }
-/* Animation */
+
 .typewriter-animation {
   animation: 
     typewriter 5s steps(50) 1s 1 normal both,

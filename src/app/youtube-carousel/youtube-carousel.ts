@@ -24,20 +24,24 @@ export class YoutubeCarouselComponent implements OnInit {
   ngOnInit(): void {
     this.videos = [
       {
-        embedUrl: this.sanitize('https://www.youtube.com/embed/aNIJ6wy3c64'),
-        title: 'Live Multi-Gaming 🎮'
+        embedUrl: this.sanitize('https://www.youtube.com/embed/a1ECl6PpQy4'),
+        title: 'Je suis un pro 🎮'
       },
       {
-        embedUrl: this.sanitize('https://www.youtube.com/embed/aNIJ6wy3c64'),
-        title: 'Soirée horreur 😱'
+        embedUrl: this.sanitize('https://www.youtube.com/embed/aCKH7ByKd5A'),
+        title: 'La main verte 🌿'
       },
       {
-        embedUrl: this.sanitize('https://www.youtube.com/embed/aNIJ6wy3c64'),
-        title: 'Découverte indé 🔥'
+        embedUrl: this.sanitize('https://www.youtube.com/embed/OliLtD5bOpk'),
+        title: 'Metricool 📊'
       },
       {
-        embedUrl: this.sanitize('https://www.youtube.com/embed/aNIJ6wy3c64'),
-        title: 'Best of commu 😂'
+        embedUrl: this.sanitize('https://www.youtube.com/embed/Oce9gB3VZw8'),
+        title: 'Quand je suis devenu papa célibataire 👨‍👧'
+      },
+      {
+        embedUrl: this.sanitize('https://www.youtube.com/embed/uyBf2qf-mqA'),
+        title: "Le petit chien s’est lâché 🐕"
       }
     ];
       this.visibleCount = window.innerWidth < 600 ? 1 : 3;
