@@ -10,7 +10,6 @@
 }
 
 .presentation-box {
-font-family: 'Montserrat', sans-serif;
 color: var(--text-dark);
   margin: 40px auto;
   padding: 24px;
@@ -29,13 +28,13 @@ background: var(--bg-semi-transparent);
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: var(--font-size-subtitle);
   margin-bottom: 16px;
   font-weight: 500;
 }
 
 .intro, .cta {
-  font-size: 16px;
+  font-size: var(--font-size-cta);
   margin-bottom: 12px;
   line-height: 1.5;
 }
@@ -74,7 +73,7 @@ background: var(--bg-semi-transparent);
 }
 
 .tt {
-  background: var(--tiktok-black);
+  background: black;
 }
 
 .ig {
@@ -82,17 +81,18 @@ background: var(--bg-semi-transparent);
 }
 
 .cursor{
-  padding-top: 4px;
-  padding-bottom: 6px;
+  padding-top: 30px;
+  padding-bottom: 20px;
     position: relative;
     width: fit-content;
 
     margin: 0 auto;
     border-right: 2px solid var(--cursor-border);
-    font-size: 30px;
+    font-size: var(--font-size-large);
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 .typewriter-animation {

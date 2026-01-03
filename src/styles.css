@@ -21,6 +21,14 @@
   --shadow: rgba(0, 0, 0, 0.25);
   --shadow-light: rgba(0, 0, 0, 0.15);
   --cursor-border: rgba(255, 255, 255, 0.75);
+  --caption-color: #1a1a1a;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 3rem;
+  --font-size-p: 1.1rem;
+  --font-size-caption: 0.9rem;
+  --font-size-large: 50px;
+  --font-size-subtitle: 1.25rem;
+  --font-size-cta: 1.1rem;
 }
 
 .dark {
@@ -56,6 +64,17 @@ body {
   background: linear-gradient(to bottom, var(--light-orange), var(--lighter-orange));
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--font-size-p);
+  line-height: 1.5;
 }
 
 #background-wrap {
